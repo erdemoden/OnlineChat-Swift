@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1930D6DA27A5701E00D9C17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6D927A5701E00D9C17B /* AppDelegate.swift */; };
+		1930D6DC27A5701E00D9C17B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6DB27A5701E00D9C17B /* SceneDelegate.swift */; };
+		1930D6DE27A5701E00D9C17B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6DD27A5701E00D9C17B /* ViewController.swift */; };
+		1930D6E127A5701E00D9C17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1930D6DF27A5701E00D9C17B /* Main.storyboard */; };
+		1930D6E427A5701E00D9C17B /* onlinechat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6E227A5701E00D9C17B /* onlinechat.xcdatamodeld */; };
+		1930D6E627A5702000D9C17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1930D6E527A5702000D9C17B /* Assets.xcassets */; };
+		1930D6E927A5702000D9C17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1930D6E727A5702000D9C17B /* LaunchScreen.storyboard */; };
+		1930D6F427A5702100D9C17B /* onlinechatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6F327A5702100D9C17B /* onlinechatTests.swift */; };
+		1930D6FE27A5702100D9C17B /* onlinechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6FD27A5702100D9C17B /* onlinechatUITests.swift */; };
+		1930D70027A5702100D9C17B /* onlinechatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6FF27A5702100D9C17B /* onlinechatUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1930D6F027A5702100D9C17B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1930D6CE27A5701E00D9C17B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1930D6D527A5701E00D9C17B;
+			remoteInfo = onlinechat;
+		};
+		1930D6FA27A5702100D9C17B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1930D6CE27A5701E00D9C17B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1930D6D527A5701E00D9C17B;
+			remoteInfo = onlinechat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1930D6D627A5701E00D9C17B /* onlinechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onlinechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1930D6D927A5701E00D9C17B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1930D6DB27A5701E00D9C17B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1930D6DD27A5701E00D9C17B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1930D6E027A5701E00D9C17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1930D6E327A5701E00D9C17B /* onlinechat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = onlinechat.xcdatamodel; sourceTree = "<group>"; };
+		1930D6E527A5702000D9C17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1930D6E827A5702000D9C17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1930D6EA27A5702000D9C17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1930D6EF27A5702100D9C17B /* onlinechatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onlinechatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1930D6F327A5702100D9C17B /* onlinechatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlinechatTests.swift; sourceTree = "<group>"; };
+		1930D6F927A5702100D9C17B /* onlinechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onlinechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1930D6FD27A5702100D9C17B /* onlinechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlinechatUITests.swift; sourceTree = "<group>"; };
+		1930D6FF27A5702100D9C17B /* onlinechatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlinechatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1930D6D327A5701E00D9C17B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1930D6EC27A5702100D9C17B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1930D6F627A5702100D9C17B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1930D6CD27A5701E00D9C17B = {
+			isa = PBXGroup;
+			children = (
+				1930D6D827A5701E00D9C17B /* onlinechat */,
+				1930D6F227A5702100D9C17B /* onlinechatTests */,
+				1930D6FC27A5702100D9C17B /* onlinechatUITests */,
+				1930D6D727A5701E00D9C17B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1930D6D727A5701E00D9C17B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1930D6D627A5701E00D9C17B /* onlinechat.app */,
+				1930D6EF27A5702100D9C17B /* onlinechatTests.xctest */,
+				1930D6F927A5702100D9C17B /* onlinechatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1930D6D827A5701E00D9C17B /* onlinechat */ = {
+			isa = PBXGroup;
+			children = (
+				1930D6D927A5701E00D9C17B /* AppDelegate.swift */,
+				1930D6DB27A5701E00D9C17B /* SceneDelegate.swift */,
+				1930D6DD27A5701E00D9C17B /* ViewController.swift */,
+				1930D6DF27A5701E00D9C17B /* Main.storyboard */,
+				1930D6E527A5702000D9C17B /* Assets.xcassets */,
+				1930D6E727A5702000D9C17B /* LaunchScreen.storyboard */,
+				1930D6EA27A5702000D9C17B /* Info.plist */,
+				1930D6E227A5701E00D9C17B /* onlinechat.xcdatamodeld */,
+			);
+			path = onlinechat;
+			sourceTree = "<group>";
+		};
+		1930D6F227A5702100D9C17B /* onlinechatTests */ = {
+			isa = PBXGroup;
+			children = (
+				1930D6F327A5702100D9C17B /* onlinechatTests.swift */,
+			);
+			path = onlinechatTests;
+			sourceTree = "<group>";
+		};
+		1930D6FC27A5702100D9C17B /* onlinechatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1930D6FD27A5702100D9C17B /* onlinechatUITests.swift */,
+				1930D6FF27A5702100D9C17B /* onlinechatUITestsLaunchTests.swift */,
+			);
+			path = onlinechatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1930D6D527A5701E00D9C17B /* onlinechat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1930D70327A5702100D9C17B /* Build configuration list for PBXNativeTarget "onlinechat" */;
+			buildPhases = (
+				1930D6D227A5701E00D9C17B /* Sources */,
+				1930D6D327A5701E00D9C17B /* Frameworks */,
+				1930D6D427A5701E00D9C17B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = onlinechat;
+			productName = onlinechat;
+			productReference = 1930D6D627A5701E00D9C17B /* onlinechat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1930D6EE27A5702100D9C17B /* onlinechatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1930D70627A5702100D9C17B /* Build configuration list for PBXNativeTarget "onlinechatTests" */;
+			buildPhases = (
+				1930D6EB27A5702100D9C17B /* Sources */,
+				1930D6EC27A5702100D9C17B /* Frameworks */,
+				1930D6ED27A5702100D9C17B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1930D6F127A5702100D9C17B /* PBXTargetDependency */,
+			);
+			name = onlinechatTests;
+			productName = onlinechatTests;
+			productReference = 1930D6EF27A5702100D9C17B /* onlinechatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1930D6F827A5702100D9C17B /* onlinechatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1930D70927A5702100D9C17B /* Build configuration list for PBXNativeTarget "onlinechatUITests" */;
+			buildPhases = (
+				1930D6F527A5702100D9C17B /* Sources */,
+				1930D6F627A5702100D9C17B /* Frameworks */,
+				1930D6F727A5702100D9C17B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1930D6FB27A5702100D9C17B /* PBXTargetDependency */,
+			);
+			name = onlinechatUITests;
+			productName = onlinechatUITests;
+			productReference = 1930D6F927A5702100D9C17B /* onlinechatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1930D6CE27A5701E00D9C17B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					1930D6D527A5701E00D9C17B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					1930D6EE27A5702100D9C17B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1930D6D527A5701E00D9C17B;
+					};
+					1930D6F827A5702100D9C17B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1930D6D527A5701E00D9C17B;
+					};
+				};
+			};
+			buildConfigurationList = 1930D6D127A5701E00D9C17B /* Build configuration list for PBXProject "onlinechat" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1930D6CD27A5701E00D9C17B;
+			productRefGroup = 1930D6D727A5701E00D9C17B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1930D6D527A5701E00D9C17B /* onlinechat */,
+				1930D6EE27A5702100D9C17B /* onlinechatTests */,
+				1930D6F827A5702100D9C17B /* onlinechatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1930D6D427A5701E00D9C17B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1930D6E927A5702000D9C17B /* LaunchScreen.storyboard in Resources */,
+				1930D6E627A5702000D9C17B /* Assets.xcassets in Resources */,
+				1930D6E127A5701E00D9C17B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1930D6ED27A5702100D9C17B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1930D6F727A5702100D9C17B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1930D6D227A5701E00D9C17B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1930D6E427A5701E00D9C17B /* onlinechat.xcdatamodeld in Sources */,
+				1930D6DE27A5701E00D9C17B /* ViewController.swift in Sources */,
+				1930D6DA27A5701E00D9C17B /* AppDelegate.swift in Sources */,
+				1930D6DC27A5701E00D9C17B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1930D6EB27A5702100D9C17B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1930D6F427A5702100D9C17B /* onlinechatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1930D6F527A5702100D9C17B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1930D6FE27A5702100D9C17B /* onlinechatUITests.swift in Sources */,
+				1930D70027A5702100D9C17B /* onlinechatUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1930D6F127A5702100D9C17B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1930D6D527A5701E00D9C17B /* onlinechat */;
+			targetProxy = 1930D6F027A5702100D9C17B /* PBXContainerItemProxy */;
+		};
+		1930D6FB27A5702100D9C17B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1930D6D527A5701E00D9C17B /* onlinechat */;
+			targetProxy = 1930D6FA27A5702100D9C17B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1930D6DF27A5701E00D9C17B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1930D6E027A5701E00D9C17B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1930D6E727A5702000D9C17B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1930D6E827A5702000D9C17B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1930D70127A5702100D9C17B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1930D70227A5702100D9C17B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1930D70427A5702100D9C17B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = onlinechat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erdem.onlinechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1930D70527A5702100D9C17B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = onlinechat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erdem.onlinechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1930D70727A5702100D9C17B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erdem.onlinechatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/onlinechat.app/onlinechat";
+			};
+			name = Debug;
+		};
+		1930D70827A5702100D9C17B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erdem.onlinechatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/onlinechat.app/onlinechat";
+			};
+			name = Release;
+		};
+		1930D70A27A5702100D9C17B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erdem.onlinechatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = onlinechat;
+			};
+			name = Debug;
+		};
+		1930D70B27A5702100D9C17B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erdem.onlinechatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = onlinechat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1930D6D127A5701E00D9C17B /* Build configuration list for PBXProject "onlinechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1930D70127A5702100D9C17B /* Debug */,
+				1930D70227A5702100D9C17B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1930D70327A5702100D9C17B /* Build configuration list for PBXNativeTarget "onlinechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1930D70427A5702100D9C17B /* Debug */,
+				1930D70527A5702100D9C17B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1930D70627A5702100D9C17B /* Build configuration list for PBXNativeTarget "onlinechatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1930D70727A5702100D9C17B /* Debug */,
+				1930D70827A5702100D9C17B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1930D70927A5702100D9C17B /* Build configuration list for PBXNativeTarget "onlinechatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1930D70A27A5702100D9C17B /* Debug */,
+				1930D70B27A5702100D9C17B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1930D6E227A5701E00D9C17B /* onlinechat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1930D6E327A5701E00D9C17B /* onlinechat.xcdatamodel */,
+			);
+			currentVersion = 1930D6E327A5701E00D9C17B /* onlinechat.xcdatamodel */;
+			path = onlinechat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1930D6CE27A5701E00D9C17B /* Project object */;
+}
