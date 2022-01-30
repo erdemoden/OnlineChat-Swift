@@ -17,6 +17,8 @@
 		1930D6F427A5702100D9C17B /* onlinechatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6F327A5702100D9C17B /* onlinechatTests.swift */; };
 		1930D6FE27A5702100D9C17B /* onlinechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6FD27A5702100D9C17B /* onlinechatUITests.swift */; };
 		1930D70027A5702100D9C17B /* onlinechatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6FF27A5702100D9C17B /* onlinechatUITestsLaunchTests.swift */; };
+		1930D70D27A57EB200D9C17B /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D70C27A57EB200D9C17B /* HamburgerViewController.swift */; };
+		1930D71027A5D71800D9C17B /* ChatTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D70F27A5D71800D9C17B /* ChatTables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		1930D6F927A5702100D9C17B /* onlinechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onlinechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1930D6FD27A5702100D9C17B /* onlinechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlinechatUITests.swift; sourceTree = "<group>"; };
 		1930D6FF27A5702100D9C17B /* onlinechatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlinechatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1930D70C27A57EB200D9C17B /* HamburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		1930D70F27A5D71800D9C17B /* ChatTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,12 @@
 		1930D6D827A5701E00D9C17B /* onlinechat */ = {
 			isa = PBXGroup;
 			children = (
+				1930D70E27A5D6EA00D9C17B /* View */,
 				1930D6D927A5701E00D9C17B /* AppDelegate.swift */,
 				1930D6DB27A5701E00D9C17B /* SceneDelegate.swift */,
 				1930D6DD27A5701E00D9C17B /* ViewController.swift */,
 				1930D6DF27A5701E00D9C17B /* Main.storyboard */,
+				1930D70C27A57EB200D9C17B /* HamburgerViewController.swift */,
 				1930D6E527A5702000D9C17B /* Assets.xcassets */,
 				1930D6E727A5702000D9C17B /* LaunchScreen.storyboard */,
 				1930D6EA27A5702000D9C17B /* Info.plist */,
@@ -128,6 +134,14 @@
 				1930D6FF27A5702100D9C17B /* onlinechatUITestsLaunchTests.swift */,
 			);
 			path = onlinechatUITests;
+			sourceTree = "<group>";
+		};
+		1930D70E27A5D6EA00D9C17B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1930D70F27A5D71800D9C17B /* ChatTables.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +278,8 @@
 				1930D6E427A5701E00D9C17B /* onlinechat.xcdatamodeld in Sources */,
 				1930D6DE27A5701E00D9C17B /* ViewController.swift in Sources */,
 				1930D6DA27A5701E00D9C17B /* AppDelegate.swift in Sources */,
+				1930D70D27A57EB200D9C17B /* HamburgerViewController.swift in Sources */,
+				1930D71027A5D71800D9C17B /* ChatTables.swift in Sources */,
 				1930D6DC27A5701E00D9C17B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
