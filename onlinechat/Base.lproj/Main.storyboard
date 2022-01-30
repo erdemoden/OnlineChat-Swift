@@ -84,7 +84,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf2-jY-3wC">
-                                        <rect key="frame" x="8" y="187.66666666666666" width="383" height="52"/>
+                                        <rect key="frame" x="8" y="188" width="383" height="52"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -99,6 +99,10 @@
                                     <constraint firstItem="kCD-et-yi0" firstAttribute="leading" secondItem="BGY-Tz-VKf" secondAttribute="leading" constant="8" id="pBF-4N-pom"/>
                                     <constraint firstItem="Hf2-jY-3wC" firstAttribute="top" secondItem="kCD-et-yi0" secondAttribute="bottom" constant="2.3299999237060547" id="pgF-5z-Qry"/>
                                 </constraints>
+                            </view>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYy-EP-2ay" userLabel="HamburgerBackView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou1-Ny-2IC" userLabel="HamburgerView">
                                 <rect key="frame" x="-280" y="0.0" width="280" height="896"/>
@@ -123,7 +127,11 @@
                             <constraint firstItem="BGY-Tz-VKf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5gs-Ek-4rP"/>
                             <constraint firstItem="qwl-cv-fqJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5lS-Rr-kPU"/>
                             <constraint firstItem="BGY-Tz-VKf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-34" id="7ed-Uf-3fo"/>
+                            <constraint firstItem="RYy-EP-2ay" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Etz-a3-Uay"/>
+                            <constraint firstItem="RYy-EP-2ay" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GX3-2x-h1I"/>
+                            <constraint firstAttribute="bottom" secondItem="RYy-EP-2ay" secondAttribute="bottom" id="Gfi-Gy-hvu"/>
                             <constraint firstItem="qwl-cv-fqJ" firstAttribute="top" secondItem="BGY-Tz-VKf" secondAttribute="bottom" id="J72-NR-1ND"/>
+                            <constraint firstItem="RYy-EP-2ay" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jlm-oL-So2"/>
                             <constraint firstAttribute="bottom" secondItem="Ou1-Ny-2IC" secondAttribute="bottom" id="WMN-zp-0Ki"/>
                             <constraint firstItem="qwl-cv-fqJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dXU-qC-4Hw"/>
                             <constraint firstItem="Ou1-Ny-2IC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-280" id="inb-qa-3x9"/>
