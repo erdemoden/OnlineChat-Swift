@@ -142,6 +142,7 @@
                     </view>
                     <connections>
                         <outlet property="ChatTables" destination="qwl-cv-fqJ" id="TzT-gQ-2HX"/>
+                        <outlet property="HamburgerBackView" destination="RYy-EP-2ay" id="bzK-gb-6fe"/>
                         <outlet property="HamburgerRight" destination="inb-qa-3x9" id="SiG-TM-CLh"/>
                         <outlet property="TitleBackGround" destination="BGY-Tz-VKf" id="53Y-0d-Q9w"/>
                     </connections>
