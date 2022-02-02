@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     private var isHamburgerMenuShown:Bool = false
     private var BeginPoint:CGFloat = 0.0;

@@ -19,6 +19,9 @@
 		1930D70027A5702100D9C17B /* onlinechatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D6FF27A5702100D9C17B /* onlinechatUITestsLaunchTests.swift */; };
 		1930D70D27A57EB200D9C17B /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D70C27A57EB200D9C17B /* HamburgerViewController.swift */; };
 		1930D71027A5D71800D9C17B /* ChatTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930D70F27A5D71800D9C17B /* ChatTables.swift */; };
+		8AC3D3E5E765D16D0C0F05E5 /* Pods_onlinechat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B6563C734B4E5BA09A8261 /* Pods_onlinechat.framework */; };
+		B12C354FC12A2E07A41D38E1 /* Pods_onlinechat_onlinechatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42F90B5E4D514656DA4E1D0 /* Pods_onlinechat_onlinechatUITests.framework */; };
+		ED6BD52B34E8EFB2C183147B /* Pods_onlinechatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36B2456DF11DA8B1D55468 /* Pods_onlinechatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,15 @@
 		1930D6FF27A5702100D9C17B /* onlinechatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlinechatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1930D70C27A57EB200D9C17B /* HamburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
 		1930D70F27A5D71800D9C17B /* ChatTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTables.swift; sourceTree = "<group>"; };
+		21C2C41DD64DE2723E649AB3 /* Pods-onlinechatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechatTests.release.xcconfig"; path = "Target Support Files/Pods-onlinechatTests/Pods-onlinechatTests.release.xcconfig"; sourceTree = "<group>"; };
+		6BD421481D7AC098DFD97150 /* Pods-onlinechatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechatTests.debug.xcconfig"; path = "Target Support Files/Pods-onlinechatTests/Pods-onlinechatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A42F90B5E4D514656DA4E1D0 /* Pods_onlinechat_onlinechatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onlinechat_onlinechatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE771B3B0D88CCF49A0A0437 /* Pods-onlinechat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechat.debug.xcconfig"; path = "Target Support Files/Pods-onlinechat/Pods-onlinechat.debug.xcconfig"; sourceTree = "<group>"; };
+		D0B6563C734B4E5BA09A8261 /* Pods_onlinechat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onlinechat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A4E482F39C69CB702557E8 /* Pods-onlinechat-onlinechatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechat-onlinechatUITests.debug.xcconfig"; path = "Target Support Files/Pods-onlinechat-onlinechatUITests/Pods-onlinechat-onlinechatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB6C26450D1C30D3072BE6B8 /* Pods-onlinechat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechat.release.xcconfig"; path = "Target Support Files/Pods-onlinechat/Pods-onlinechat.release.xcconfig"; sourceTree = "<group>"; };
+		DE36B2456DF11DA8B1D55468 /* Pods_onlinechatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onlinechatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9F411707A55449C382EEEE /* Pods-onlinechat-onlinechatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechat-onlinechatUITests.release.xcconfig"; path = "Target Support Files/Pods-onlinechat-onlinechatUITests/Pods-onlinechat-onlinechatUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC3D3E5E765D16D0C0F05E5 /* Pods_onlinechat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6BD52B34E8EFB2C183147B /* Pods_onlinechatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12C354FC12A2E07A41D38E1 /* Pods_onlinechat_onlinechatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +104,8 @@
 				1930D6F227A5702100D9C17B /* onlinechatTests */,
 				1930D6FC27A5702100D9C17B /* onlinechatUITests */,
 				1930D6D727A5701E00D9C17B /* Products */,
+				CBB2B87625BFE78B73C5C16F /* Pods */,
+				3C4258994ECD68E3D5390B81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +161,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3C4258994ECD68E3D5390B81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B6563C734B4E5BA09A8261 /* Pods_onlinechat.framework */,
+				A42F90B5E4D514656DA4E1D0 /* Pods_onlinechat_onlinechatUITests.framework */,
+				DE36B2456DF11DA8B1D55468 /* Pods_onlinechatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBB2B87625BFE78B73C5C16F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE771B3B0D88CCF49A0A0437 /* Pods-onlinechat.debug.xcconfig */,
+				DB6C26450D1C30D3072BE6B8 /* Pods-onlinechat.release.xcconfig */,
+				D6A4E482F39C69CB702557E8 /* Pods-onlinechat-onlinechatUITests.debug.xcconfig */,
+				ED9F411707A55449C382EEEE /* Pods-onlinechat-onlinechatUITests.release.xcconfig */,
+				6BD421481D7AC098DFD97150 /* Pods-onlinechatTests.debug.xcconfig */,
+				21C2C41DD64DE2723E649AB3 /* Pods-onlinechatTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1930D70327A5702100D9C17B /* Build configuration list for PBXNativeTarget "onlinechat" */;
 			buildPhases = (
+				D8EC1CF2ADA5CD29D9D803EC /* [CP] Check Pods Manifest.lock */,
 				1930D6D227A5701E00D9C17B /* Sources */,
 				1930D6D327A5701E00D9C17B /* Frameworks */,
 				1930D6D427A5701E00D9C17B /* Resources */,
+				95119C64AD72E49BAC4F99DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1930D70627A5702100D9C17B /* Build configuration list for PBXNativeTarget "onlinechatTests" */;
 			buildPhases = (
+				7AB3CD601DC57D460BB3ADCF /* [CP] Check Pods Manifest.lock */,
 				1930D6EB27A5702100D9C17B /* Sources */,
 				1930D6EC27A5702100D9C17B /* Frameworks */,
 				1930D6ED27A5702100D9C17B /* Resources */,
@@ -186,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1930D70927A5702100D9C17B /* Build configuration list for PBXNativeTarget "onlinechatUITests" */;
 			buildPhases = (
+				05134E1D0EAA8A41551A34FB /* [CP] Check Pods Manifest.lock */,
 				1930D6F527A5702100D9C17B /* Sources */,
 				1930D6F627A5702100D9C17B /* Frameworks */,
 				1930D6F727A5702100D9C17B /* Resources */,
+				D4D08AE9CCF6C296A6B31FAA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,6 +315,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05134E1D0EAA8A41551A34FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onlinechat-onlinechatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AB3CD601DC57D460BB3ADCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onlinechatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95119C64AD72E49BAC4F99DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-onlinechat/Pods-onlinechat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-onlinechat/Pods-onlinechat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-onlinechat/Pods-onlinechat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4D08AE9CCF6C296A6B31FAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-onlinechat-onlinechatUITests/Pods-onlinechat-onlinechatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-onlinechat-onlinechatUITests/Pods-onlinechat-onlinechatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-onlinechat-onlinechatUITests/Pods-onlinechat-onlinechatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8EC1CF2ADA5CD29D9D803EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onlinechat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1930D6D227A5701E00D9C17B /* Sources */ = {
@@ -454,6 +603,7 @@
 		};
 		1930D70427A5702100D9C17B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE771B3B0D88CCF49A0A0437 /* Pods-onlinechat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,6 +631,7 @@
 		};
 		1930D70527A5702100D9C17B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6C26450D1C30D3072BE6B8 /* Pods-onlinechat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,6 +659,7 @@
 		};
 		1930D70727A5702100D9C17B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD421481D7AC098DFD97150 /* Pods-onlinechatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +679,7 @@
 		};
 		1930D70827A5702100D9C17B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C2C41DD64DE2723E649AB3 /* Pods-onlinechatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -546,6 +699,7 @@
 		};
 		1930D70A27A5702100D9C17B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A4E482F39C69CB702557E8 /* Pods-onlinechat-onlinechatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +717,7 @@
 		};
 		1930D70B27A5702100D9C17B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED9F411707A55449C382EEEE /* Pods-onlinechat-onlinechatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
