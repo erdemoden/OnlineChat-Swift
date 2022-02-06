@@ -130,13 +130,11 @@
 		1930D6D827A5701E00D9C17B /* onlinechat */ = {
 			isa = PBXGroup;
 			children = (
+				193DCC7427B04A7D00DC8E07 /* ChatRoomsScene */,
 				193DCC6F27B02CAB00DC8E07 /* SignUpScene */,
 				193DCC6927B00D9A00DC8E07 /* LoginScene */,
-				1930D70E27A5D6EA00D9C17B /* View */,
 				1930D6D927A5701E00D9C17B /* AppDelegate.swift */,
 				1930D6DB27A5701E00D9C17B /* SceneDelegate.swift */,
-				1930D6DD27A5701E00D9C17B /* ViewController.swift */,
-				1930D6DF27A5701E00D9C17B /* Main.storyboard */,
 				1930D70C27A57EB200D9C17B /* HamburgerViewController.swift */,
 				1930D6E527A5702000D9C17B /* Assets.xcassets */,
 				1930D6E727A5702000D9C17B /* LaunchScreen.storyboard */,
@@ -174,8 +172,8 @@
 		193DCC6927B00D9A00DC8E07 /* LoginScene */ = {
 			isa = PBXGroup;
 			children = (
-				193DCC6C27B0109000DC8E07 /* Controller */,
 				193DCC6A27B00DE600DC8E07 /* LoginStoryBoard.storyboard */,
+				193DCC6C27B0109000DC8E07 /* Controller */,
 			);
 			path = LoginScene;
 			sourceTree = "<group>";
@@ -195,6 +193,24 @@
 				193DCC7227B02CF000DC8E07 /* SignUpController.swift */,
 			);
 			path = SignUpScene;
+			sourceTree = "<group>";
+		};
+		193DCC7427B04A7D00DC8E07 /* ChatRoomsScene */ = {
+			isa = PBXGroup;
+			children = (
+				1930D6DF27A5701E00D9C17B /* Main.storyboard */,
+				193DCC7527B04AB200DC8E07 /* Controller */,
+				1930D70E27A5D6EA00D9C17B /* View */,
+			);
+			path = ChatRoomsScene;
+			sourceTree = "<group>";
+		};
+		193DCC7527B04AB200DC8E07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1930D6DD27A5701E00D9C17B /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		3C4258994ECD68E3D5390B81 /* Frameworks */ = {

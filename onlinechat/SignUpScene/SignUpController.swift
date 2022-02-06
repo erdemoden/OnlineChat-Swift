@@ -16,4 +16,10 @@ class SignUpController: UIViewController {
         let Gesture = UITapGestureRecognizer(target: self.view, action:#selector(UIView.endEditing));
         view.addGestureRecognizer(Gesture);
     }
+    @IBAction func ToLogIn(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "LoginStoryBoard", bundle: nil)
+        let LogIn = storyboard.instantiateViewController(withIdentifier: "LogIn") as! LoginController
+        navigationController?.pushViewController(LogIn, animated: true);
+    }
+    
 }
