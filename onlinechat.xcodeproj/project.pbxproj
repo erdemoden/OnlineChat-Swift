@@ -23,6 +23,7 @@
 		193DCC6E27B010B400DC8E07 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193DCC6D27B010B400DC8E07 /* LoginController.swift */; };
 		193DCC7127B02CD300DC8E07 /* SignUpStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 193DCC7027B02CD300DC8E07 /* SignUpStoryBoard.storyboard */; };
 		193DCC7327B02CF000DC8E07 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193DCC7227B02CF000DC8E07 /* SignUpController.swift */; };
+		19FAB7D027B46E2700CAA425 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB7CF27B46E2700CAA425 /* LoginViewModel.swift */; };
 		8AC3D3E5E765D16D0C0F05E5 /* Pods_onlinechat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B6563C734B4E5BA09A8261 /* Pods_onlinechat.framework */; };
 		B12C354FC12A2E07A41D38E1 /* Pods_onlinechat_onlinechatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42F90B5E4D514656DA4E1D0 /* Pods_onlinechat_onlinechatUITests.framework */; };
 		ED6BD52B34E8EFB2C183147B /* Pods_onlinechatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36B2456DF11DA8B1D55468 /* Pods_onlinechatTests.framework */; };
@@ -66,6 +67,7 @@
 		193DCC6D27B010B400DC8E07 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		193DCC7027B02CD300DC8E07 /* SignUpStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryBoard.storyboard; sourceTree = "<group>"; };
 		193DCC7227B02CF000DC8E07 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		19FAB7CF27B46E2700CAA425 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		21C2C41DD64DE2723E649AB3 /* Pods-onlinechatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechatTests.release.xcconfig"; path = "Target Support Files/Pods-onlinechatTests/Pods-onlinechatTests.release.xcconfig"; sourceTree = "<group>"; };
 		6BD421481D7AC098DFD97150 /* Pods-onlinechatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechatTests.debug.xcconfig"; path = "Target Support Files/Pods-onlinechatTests/Pods-onlinechatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A42F90B5E4D514656DA4E1D0 /* Pods_onlinechat_onlinechatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onlinechat_onlinechatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 			children = (
 				193DCC6A27B00DE600DC8E07 /* LoginStoryBoard.storyboard */,
 				193DCC6C27B0109000DC8E07 /* Controller */,
+				19FAB7CF27B46E2700CAA425 /* LoginViewModel.swift */,
 			);
 			path = LoginScene;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				1930D71027A5D71800D9C17B /* ChatTables.swift in Sources */,
 				1930D6DC27A5701E00D9C17B /* SceneDelegate.swift in Sources */,
 				193DCC6E27B010B400DC8E07 /* LoginController.swift in Sources */,
+				19FAB7D027B46E2700CAA425 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
