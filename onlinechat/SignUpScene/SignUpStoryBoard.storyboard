@@ -83,9 +83,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
                                     <color key="baseBackgroundColor" red="0.39607843139999999" green="0.46666666670000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="ToLogIn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CWs-e9-Kxo"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
