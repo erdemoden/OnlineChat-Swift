@@ -8,6 +8,6 @@
 import Foundation
 
 struct SessionMod:Codable{
-    var SessionID:String
-    var Error:String
+    var sessionid:String
+    var error:String
 }

@@ -23,3 +23,13 @@ class SignUpController: UIViewController {
     }
     
 }
+extension ViewController:ShowAlert{
+    func AlertCall(AlertMessage: String) {
+        let Alert = UIAlertController(title: "ERROR!", message: AlertMessage, preferredStyle: .alert);
+        let Action = UIAlertAction(title: "OK", style: .cancel, handler: nil);
+        Alert.addAction(Action);
+        self.present(Alert, animated: true, completion: nil);
+    }
+    
+    
+}
