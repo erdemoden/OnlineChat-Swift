@@ -27,12 +27,13 @@ class SignUpViewModel{
 //            "username":UserName,
 //            "password":Password
 //        ];
-        let Params:[String:String] = ["username":UserName,"password":Password];
+        let Params = ["username":UserName,"password":Password];
         Request.httpMethod = "POST";
         Request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         Request.setValue("application/json", forHTTPHeaderField: "Accept")
-        Request.httpBody = try? JSONSerialization.data(withJSONObject: Params, options: [])
-        let Session = URLSession.shared.dataTask(with: URL) { (Data, Response, Error) in
+        let HttpBody = try? JSONSerialization.data(withJSONObject: Params, options: []);
+        Request.httpBody = HttpBody;
+        let Session = URLSession.shared.dataTask(with: Request) { [self] (Data, Response, Error) in
             if(Error != nil){
                 print("olmadı")
                 // viewcontroller alert
@@ -41,17 +42,12 @@ class SignUpViewModel{
                 if(Data != nil){
                     do{
                         //let JsonRes = try JSONSerialization.jsonObject(with: Data!, options: []);
-                        print(String(bytes: Data!, encoding: .utf8));
                         let entity = NSEntityDescription.insertNewObject(forEntityName: "Session", into: self.Context);
                         self.Session = try JSONDecoder().decode([SessionMod].self, from: Data!);
+                        print(self.Session[0].error);
                         if(self.Session[0].sessionid != "null"){
                         entity.setValue(self.Session[0].sessionid, forKey: "session");
-                            print("merhaba");
                             try self.Context.save()
-                        }
-                        else{
-                            // HATA MESAJI VER
-                            self.Delegate.AlertCall(AlertMessage: self.Session[0].error)
                         }
                     }
                     catch{
@@ -62,7 +58,6 @@ class SignUpViewModel{
             }
         }
         Session.resume();
-        
     }
     
     
