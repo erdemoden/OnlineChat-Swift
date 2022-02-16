@@ -17,6 +17,7 @@ class SignUpController: UIViewController {
         TitleBackGround.layer.cornerRadius = 20;
         let Gesture = UITapGestureRecognizer(target: self.view, action:#selector(UIView.endEditing));
         view.addGestureRecognizer(Gesture);
+        ViewModel.Delegate = self;
     }
     @IBAction func ToLogIn(_ sender: Any) {
         let storyboard = UIStoryboard(name: "LoginStoryBoard", bundle: nil)
@@ -32,21 +33,17 @@ class SignUpController: UIViewController {
         }
         else{
             ViewModel.PostSignUp(UserName: NameField.text!, Password: PasswordField.text!)
-            if(ViewModel.Session[0].error != "null"){
-                let Alert = UIAlertController(title: "Error", message: ViewModel.Session[0].error, preferredStyle: .alert);
-                let Action = UIAlertAction(title: "Ok", style: .default, handler: nil);
-                Alert.addAction(Action);
-                self.present(Alert, animated: true, completion: nil);
-            }
         }
     }
 }
 extension SignUpController:ShowAlert{
     func AlertCall(AlertMessage: String) {
-        let Alert = UIAlertController(title: "ERROR!", message: AlertMessage, preferredStyle: .alert);
-        let Action = UIAlertAction(title: "OK", style: .cancel, handler: nil);
-        Alert.addAction(Action);
-        self.present(Alert, animated: true, completion: nil);
+        DispatchQueue.main.async {
+            let Alert = UIAlertController(title: "ERROR!", message: AlertMessage, preferredStyle: .alert);
+            let Action = UIAlertAction(title: "OK", style: .cancel, handler: nil);
+            Alert.addAction(Action);
+            self.present(Alert, animated: true, completion: nil);
+        }
     }
     
     

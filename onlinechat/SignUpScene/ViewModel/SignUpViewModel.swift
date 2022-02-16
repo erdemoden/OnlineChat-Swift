@@ -49,6 +49,9 @@ class SignUpViewModel{
                         entity.setValue(self.Session[0].sessionid, forKey: "session");
                             try self.Context.save()
                         }
+                        else{
+                            Delegate.AlertCall(AlertMessage: self.Session[0].error);
+                        }
                     }
                     catch{
                         print("error")
