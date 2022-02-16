@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 import CoreData
-protocol ShowAlert{
+protocol ShowSignAlert{
     func AlertCall(AlertMessage:String);
 }
 class SignUpViewModel{
     var Session = [SessionMod]();
-    var Delegate:ShowAlert!;
+    var Delegate:ShowSignAlert!;
     let AppDelegate:AppDelegate!
     let Context:NSManagedObjectContext!
     init() {
@@ -23,10 +23,6 @@ class SignUpViewModel{
     func PostSignUp(UserName:String,Password:String){
         let URL = URL(string: "http://localhost:1998/sign-up")!;
         var Request = URLRequest(url: URL);
-//        let Params = [
-//            "username":UserName,
-//            "password":Password
-//        ];
         let Params = ["username":UserName,"password":Password];
         Request.httpMethod = "POST";
         Request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -44,7 +40,6 @@ class SignUpViewModel{
                         //let JsonRes = try JSONSerialization.jsonObject(with: Data!, options: []);
                         let entity = NSEntityDescription.insertNewObject(forEntityName: "Session", into: self.Context);
                         self.Session = try JSONDecoder().decode([SessionMod].self, from: Data!);
-                        print(self.Session[0].error);
                         if(self.Session[0].sessionid != "null"){
                         entity.setValue(self.Session[0].sessionid, forKey: "session");
                             try self.Context.save()
@@ -62,7 +57,19 @@ class SignUpViewModel{
         }
         Session.resume();
     }
-    
+    func RemoveAll(){
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Session");
+        do{
+        let results = try self.Context.fetch(fetch);
+        for result in results as! [NSManagedObject]{
+            Context.delete(result)
+            print("deleted");
+            }
+        }
+        catch{
+            print("error");
+        }
+    }
     
     
 }

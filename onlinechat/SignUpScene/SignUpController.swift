@@ -33,10 +33,11 @@ class SignUpController: UIViewController {
         }
         else{
             ViewModel.PostSignUp(UserName: NameField.text!, Password: PasswordField.text!)
+            //ViewModel.RemoveAll();
         }
     }
 }
-extension SignUpController:ShowAlert{
+extension SignUpController:ShowSignAlert{
     func AlertCall(AlertMessage: String) {
         DispatchQueue.main.async {
             let Alert = UIAlertController(title: "ERROR!", message: AlertMessage, preferredStyle: .alert);
