@@ -10,6 +10,7 @@ import CoreData
 import UIKit
 protocol ShowLogAlert{
     func AlertCall(AlertMessage:String);
+    func SessionCreated();
 }
 class LoginViewModel{
     var Delegate :ShowLogAlert!;
@@ -21,14 +22,15 @@ class LoginViewModel{
         self.Context = AppDelegate.persistentContainer.viewContext
     }
     func PostLogin(UserName:String,Password:String){
-        let URL = URL(string: "localhost:1998/login")!;
+        let URL = URL(string:"http://localhost:1998/login")!;
         var Request = URLRequest(url: URL);
         let Params = [
             "username":UserName,
             "password":Password
         ];
         Request.httpMethod = "POST";
-        Request.setValue("Application/json", forHTTPHeaderField: "Content-Type");
+        Request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        Request.setValue("application/json", forHTTPHeaderField: "Accept")
         Request.httpBody = try? JSONSerialization.data(withJSONObject: Params, options: [])
         let Session = URLSession.shared.dataTask(with: Request) { (Data, Response, Error) in
             if(Error != nil){
@@ -42,7 +44,8 @@ class LoginViewModel{
                         self.Session = try JSONDecoder().decode([SessionMod].self, from: Data!);
                         if(self.Session[0].sessionid != "null"){
                         entity.setValue(self.Session[0].sessionid, forKey: "session");
-                            try self.Context.save()
+                            try self.Context.save();
+                            self.Delegate.SessionCreated();
                         }
                         else{
                             self.Delegate.AlertCall(AlertMessage: self.Session[0].error);

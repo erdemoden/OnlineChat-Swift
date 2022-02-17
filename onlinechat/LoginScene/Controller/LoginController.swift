@@ -8,6 +8,8 @@
 import UIKit
 
 class LoginController: UIViewController {
+    @IBOutlet weak var NameField: UITextField!
+    @IBOutlet weak var PasswordField: UITextField!
     var ViewModel = LoginViewModel();
     @IBOutlet weak var TitleBackGround: UIView!
     override func viewDidLoad() {
@@ -24,8 +26,28 @@ class LoginController: UIViewController {
         navigationController?.pushViewController(SignUp, animated: true);
     }
     
+    @IBAction func LogIn(_ sender: Any) {
+        if(PasswordField.text?.isEmpty == true||((NameField.text?.isEmpty == true))){
+            let Alert = UIAlertController(title: "Please Fill Both Name And Password Fields", message: "You Should Enter Password And Name", preferredStyle: .alert);
+            let Action = UIAlertAction(title: "Ok", style: .default, handler: nil);
+            Alert.addAction(Action);
+            self.present(Alert, animated: true, completion: nil);
+        }
+        else{
+            ViewModel.PostLogin(UserName: NameField.text!, Password: PasswordField.text!)
+        }
+    }
+    
+    
 }
 extension LoginController:ShowLogAlert{
+    func SessionCreated() {
+        DispatchQueue.main.async {
+            let MainScene = self.storyboard?.instantiateViewController(withIdentifier: "Mainscene") as! ViewController
+            self.navigationController?.pushViewController(MainScene, animated: true);
+        }
+    }
+    
     func AlertCall(AlertMessage: String) {
         DispatchQueue.main.async {
             let Alert = UIAlertController(title: "ERROR!", message: AlertMessage, preferredStyle: .alert);
@@ -34,6 +56,7 @@ extension LoginController:ShowLogAlert{
             self.present(Alert, animated: true, completion: nil);
         }
     }
+    
     
     
 }

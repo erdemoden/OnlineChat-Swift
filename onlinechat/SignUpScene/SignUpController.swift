@@ -33,7 +33,7 @@ class SignUpController: UIViewController {
         }
         else{
             ViewModel.PostSignUp(UserName: NameField.text!, Password: PasswordField.text!)
-            //ViewModel.RemoveAll();
+//            ViewModel.RemoveAll();
         }
     }
 }
