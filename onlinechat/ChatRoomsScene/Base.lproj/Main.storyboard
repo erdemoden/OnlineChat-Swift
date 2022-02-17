@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Mainscene" id="BYZ-38-t0r" customClass="ViewController" customModule="onlinechat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScene" id="BYZ-38-t0r" customClass="ViewController" customModule="onlinechat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,10 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCD-et-yi0">
                                         <rect key="frame" x="8" y="138" width="58" height="47.666666666666657"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="58" id="qW5-6i-L6j"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
                                             <imageReference key="image" image="hamburgerIcon" symbolScale="large"/>
@@ -85,7 +89,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf2-jY-3wC">
-                                        <rect key="frame" x="8" y="188" width="383" height="52"/>
+                                        <rect key="frame" x="8" y="185.66666666666666" width="383" height="52"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -95,14 +99,16 @@
                                 <constraints>
                                     <constraint firstItem="kCD-et-yi0" firstAttribute="top" secondItem="BGY-Tz-VKf" secondAttribute="top" constant="138" id="4ys-Cx-A87"/>
                                     <constraint firstAttribute="height" constant="250" id="6ad-Vf-Lsf"/>
+                                    <constraint firstItem="Hf2-jY-3wC" firstAttribute="top" secondItem="BGY-Tz-VKf" secondAttribute="top" constant="185.66666666666666" id="IQR-aT-mcb"/>
                                     <constraint firstItem="Hf2-jY-3wC" firstAttribute="leading" secondItem="BGY-Tz-VKf" secondAttribute="leading" constant="8" id="O1v-l8-FRU"/>
                                     <constraint firstAttribute="trailing" secondItem="Hf2-jY-3wC" secondAttribute="trailing" constant="23" id="PVb-Iw-Sb0"/>
+                                    <constraint firstAttribute="bottom" secondItem="kCD-et-yi0" secondAttribute="bottom" constant="64.329999999999998" id="mJU-mC-r4h"/>
                                     <constraint firstItem="kCD-et-yi0" firstAttribute="leading" secondItem="BGY-Tz-VKf" secondAttribute="leading" constant="8" id="pBF-4N-pom"/>
-                                    <constraint firstItem="Hf2-jY-3wC" firstAttribute="top" secondItem="kCD-et-yi0" secondAttribute="bottom" constant="2.3299999237060547" id="pgF-5z-Qry"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYy-EP-2ay" userLabel="HamburgerBackView">
+                            <view alpha="0.75" contentMode="scaleToFill" id="RYy-EP-2ay" userLabel="HamburgerBackView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou1-Ny-2IC" userLabel="HamburgerView">
@@ -128,11 +134,7 @@
                             <constraint firstItem="BGY-Tz-VKf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5gs-Ek-4rP"/>
                             <constraint firstItem="qwl-cv-fqJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5lS-Rr-kPU"/>
                             <constraint firstItem="BGY-Tz-VKf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-34" id="7ed-Uf-3fo"/>
-                            <constraint firstItem="RYy-EP-2ay" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Etz-a3-Uay"/>
-                            <constraint firstItem="RYy-EP-2ay" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GX3-2x-h1I"/>
-                            <constraint firstAttribute="bottom" secondItem="RYy-EP-2ay" secondAttribute="bottom" id="Gfi-Gy-hvu"/>
                             <constraint firstItem="qwl-cv-fqJ" firstAttribute="top" secondItem="BGY-Tz-VKf" secondAttribute="bottom" id="J72-NR-1ND"/>
-                            <constraint firstItem="RYy-EP-2ay" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jlm-oL-So2"/>
                             <constraint firstAttribute="bottom" secondItem="Ou1-Ny-2IC" secondAttribute="bottom" id="WMN-zp-0Ki"/>
                             <constraint firstItem="qwl-cv-fqJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dXU-qC-4Hw"/>
                             <constraint firstItem="Ou1-Ny-2IC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-280" id="inb-qa-3x9"/>
@@ -141,6 +143,7 @@
                             <constraint firstAttribute="bottom" secondItem="qwl-cv-fqJ" secondAttribute="bottom" id="x21-Xs-hEP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tv0-Tl-BuC"/>
                     <connections>
                         <outlet property="ChatTables" destination="qwl-cv-fqJ" id="TzT-gQ-2HX"/>
                         <outlet property="HamburgerBackView" destination="RYy-EP-2ay" id="bzK-gb-6fe"/>
@@ -150,12 +153,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+            <point key="canvasLocation" x="939.13043478260875" y="69.642857142857139"/>
         </scene>
         <!--Hamburger View Controller-->
         <scene sceneID="6ce-GW-d0g">
             <objects>
-                <viewController id="yIG-kr-myz" customClass="HamburgerViewController" customModule="onlinechat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="hamburger" id="yIG-kr-myz" customClass="HamburgerViewController" customModule="onlinechat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GXK-1T-qaU">
                         <rect key="frame" x="0.0" y="0.0" width="280" height="818"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcZ-B2-cv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773.91304347826087" y="49.553571428571423"/>
+            <point key="canvasLocation" x="1684.057971014493" y="49.553571428571423"/>
         </scene>
     </scenes>
     <resources>
@@ -268,6 +271,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

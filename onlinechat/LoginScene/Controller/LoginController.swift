@@ -43,7 +43,8 @@ class LoginController: UIViewController {
 extension LoginController:ShowLogAlert{
     func SessionCreated() {
         DispatchQueue.main.async {
-            let MainScene = self.storyboard?.instantiateViewController(withIdentifier: "Mainscene") as! ViewController
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let MainScene = storyboard.instantiateViewController(withIdentifier: "MainScene") as! ViewController
             self.navigationController?.pushViewController(MainScene, animated: true);
         }
     }
