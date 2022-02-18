@@ -33,11 +33,19 @@ class SignUpController: UIViewController {
         }
         else{
             ViewModel.PostSignUp(UserName: NameField.text!, Password: PasswordField.text!)
-//            ViewModel.RemoveAll();
-        }
+            //ViewModel.RemoveAll();
+       }
     }
 }
 extension SignUpController:ShowSignAlert{
+    func SessionCreated() {
+        DispatchQueue.main.async {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let MainScene = storyboard.instantiateViewController(withIdentifier: "MainScene") as! ViewController
+            self.navigationController?.pushViewController(MainScene, animated: true);
+        }
+    }
+    
     func AlertCall(AlertMessage: String) {
         DispatchQueue.main.async {
             let Alert = UIAlertController(title: "ERROR!", message: AlertMessage, preferredStyle: .alert);

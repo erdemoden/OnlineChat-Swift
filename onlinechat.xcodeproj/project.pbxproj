@@ -142,7 +142,6 @@
 				193DCC6927B00D9A00DC8E07 /* LoginScene */,
 				1930D6D927A5701E00D9C17B /* AppDelegate.swift */,
 				1930D6DB27A5701E00D9C17B /* SceneDelegate.swift */,
-				1930D70C27A57EB200D9C17B /* HamburgerViewController.swift */,
 				1930D6E527A5702000D9C17B /* Assets.xcassets */,
 				1930D6E727A5702000D9C17B /* LaunchScreen.storyboard */,
 				1930D6EA27A5702000D9C17B /* Info.plist */,
@@ -217,6 +216,7 @@
 		193DCC7527B04AB200DC8E07 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1930D70C27A57EB200D9C17B /* HamburgerViewController.swift */,
 				1930D6DD27A5701E00D9C17B /* ViewController.swift */,
 			);
 			path = Controller;

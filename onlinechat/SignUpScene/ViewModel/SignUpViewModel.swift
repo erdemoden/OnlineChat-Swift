@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 protocol ShowSignAlert{
     func AlertCall(AlertMessage:String);
+    func SessionCreated();
 }
 class SignUpViewModel{
     var Session = [SessionMod]();
@@ -43,6 +44,7 @@ class SignUpViewModel{
                         if(self.Session[0].sessionid != "null"){
                         entity.setValue(self.Session[0].sessionid, forKey: "session");
                             try self.Context.save()
+                            self.Delegate.SessionCreated();
                         }
                         else{
                             Delegate.AlertCall(AlertMessage: self.Session[0].error);
@@ -59,12 +61,14 @@ class SignUpViewModel{
     }
     func RemoveAll(){
         let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Session");
+        fetch.returnsObjectsAsFaults = false;
         do{
         let results = try self.Context.fetch(fetch);
         for result in results as! [NSManagedObject]{
-            Context.delete(result)
+             Context.delete(result)
             print("deleted");
             }
+            try Context.save();
         }
         catch{
             print("error");

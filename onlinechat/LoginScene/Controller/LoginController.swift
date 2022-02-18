@@ -12,6 +12,9 @@ class LoginController: UIViewController {
     @IBOutlet weak var PasswordField: UITextField!
     var ViewModel = LoginViewModel();
     @IBOutlet weak var TitleBackGround: UIView!
+    override func viewWillAppear(_ animated: Bool) {
+        ViewModel.CheckSession();
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController!.navigationBar.isHidden = true
@@ -19,6 +22,7 @@ class LoginController: UIViewController {
         let Gesture = UITapGestureRecognizer(target: self.view, action:#selector(UIView.endEditing));
         view.addGestureRecognizer(Gesture);
         ViewModel.Delegate = self;
+        
     }
     @IBAction func ToSignUp(_ sender: Any) {
         let storyboard = UIStoryboard(name: "SignUpStoryBoard", bundle: nil)

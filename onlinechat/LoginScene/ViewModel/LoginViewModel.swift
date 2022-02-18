@@ -21,6 +21,27 @@ class LoginViewModel{
         self.AppDelegate = UIApplication.shared.delegate as? AppDelegate
         self.Context = AppDelegate.persistentContainer.viewContext
     }
+    // MARK: -If User Has Session CheckSession() Will Automatically Open The Main Scene
+    func CheckSession(){
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Session");
+        fetch.returnsObjectsAsFaults = false;
+        do{
+        let results = try self.Context.fetch(fetch);
+            if(results.count>0){
+                print(results.count)
+                Delegate.SessionCreated();
+            }
+            else{
+                print(results.count)
+            }
+        }
+        catch{
+            print("error");
+        }
+        
+    }
+    
+    //MARK: - Function For Login By Form Values
     func PostLogin(UserName:String,Password:String){
         let URL = URL(string:"http://localhost:1998/login")!;
         var Request = URLRequest(url: URL);
