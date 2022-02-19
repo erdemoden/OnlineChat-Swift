@@ -52,12 +52,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         ChatTables.separatorStyle = .none;
         TitleBackGround.layer.cornerRadius = 20;
         HamburgerBackView.isHidden = true;
-        // Do any additional setup after loading the view.
     }
+    
+    // MARK: Setting HamburgerView By User Datas
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToHamburger"{
+            let Hamburger = segue.destination as! HamburgerViewController;
+            
+        }
+    }
+    
+    // MARK: When BackHamburger (Black Screen) Tapped Hamburger Will Disappear.
     @objc func BackHamburgerTapped(){
         self.HideHamburger();
         
     }
+    
+    // MARK: Function For Hiding The Hamburger Menu.
     func HideHamburger(){
         UIView.animate(withDuration: 0.1) {
             self.HamburgerRight.constant = 10
@@ -76,7 +87,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     
     //-MARK: Hamburger Menu Movement Code
-
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if(isHamburgerMenuShown){
             if let touch = touches.first{

@@ -65,6 +65,7 @@ class LoginViewModel{
                         self.Session = try JSONDecoder().decode([SessionMod].self, from: Data!);
                         if(self.Session[0].sessionid != "null"){
                         entity.setValue(self.Session[0].sessionid, forKey: "session");
+                        entity.setValue(self.Session[0].name, forKey: "session");
                             try self.Context.save();
                             self.Delegate.SessionCreated();
                         }

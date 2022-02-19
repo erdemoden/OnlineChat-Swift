@@ -10,4 +10,5 @@ import Foundation
 struct SessionMod:Codable{
     var sessionid:String
     var error:String
+    var name:String
 }

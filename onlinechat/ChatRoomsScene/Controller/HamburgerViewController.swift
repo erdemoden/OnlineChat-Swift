@@ -8,12 +8,14 @@
 import UIKit
 
 class HamburgerViewController: UIViewController {
+    @IBOutlet weak var UserName: UILabel!
     @IBOutlet weak var BackGroundView: UIView!
     @IBOutlet weak var ProfilePic: UIImageView!
-    
+    var ViewModel = HamburgerVM();
     override func viewDidLoad() {
         super.viewDidLoad()
         self.SetHamburgerRadious();
+        
     }
     
     func SetHamburgerRadious(){
@@ -23,5 +25,9 @@ class HamburgerViewController: UIViewController {
         self.ProfilePic.layer.cornerRadius = 40;
         self.ProfilePic.clipsToBounds = true;
     }
+    @IBAction func LogOutBut(_ sender: Any) {
+        
+    }
+    
 
 }

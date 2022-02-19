@@ -25,6 +25,7 @@
 		193DCC7327B02CF000DC8E07 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193DCC7227B02CF000DC8E07 /* SignUpController.swift */; };
 		195094DB27B53E9600A97475 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195094DA27B53E9600A97475 /* SignUpViewModel.swift */; };
 		195094DE27B556EB00A97475 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195094DD27B556EB00A97475 /* SessionModel.swift */; };
+		19BF6D1827C133DD004545FB /* HamburgerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BF6D1727C133DD004545FB /* HamburgerVM.swift */; };
 		19FAB7D027B46E2700CAA425 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB7CF27B46E2700CAA425 /* LoginViewModel.swift */; };
 		8AC3D3E5E765D16D0C0F05E5 /* Pods_onlinechat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B6563C734B4E5BA09A8261 /* Pods_onlinechat.framework */; };
 		B12C354FC12A2E07A41D38E1 /* Pods_onlinechat_onlinechatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42F90B5E4D514656DA4E1D0 /* Pods_onlinechat_onlinechatUITests.framework */; };
@@ -71,6 +72,7 @@
 		193DCC7227B02CF000DC8E07 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		195094DA27B53E9600A97475 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		195094DD27B556EB00A97475 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		19BF6D1727C133DD004545FB /* HamburgerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerVM.swift; sourceTree = "<group>"; };
 		19FAB7CF27B46E2700CAA425 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		21C2C41DD64DE2723E649AB3 /* Pods-onlinechatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechatTests.release.xcconfig"; path = "Target Support Files/Pods-onlinechatTests/Pods-onlinechatTests.release.xcconfig"; sourceTree = "<group>"; };
 		6BD421481D7AC098DFD97150 /* Pods-onlinechatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlinechatTests.debug.xcconfig"; path = "Target Support Files/Pods-onlinechatTests/Pods-onlinechatTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		193DCC7427B04A7D00DC8E07 /* ChatRoomsScene */ = {
 			isa = PBXGroup;
 			children = (
+				19BF6D1627C133C5004545FB /* ViewModels */,
 				1930D6DF27A5701E00D9C17B /* Main.storyboard */,
 				193DCC7527B04AB200DC8E07 /* Controller */,
 				1930D70E27A5D6EA00D9C17B /* View */,
@@ -244,6 +247,14 @@
 				195094DD27B556EB00A97475 /* SessionModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		19BF6D1627C133C5004545FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				19BF6D1727C133DD004545FB /* HamburgerVM.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		3C4258994ECD68E3D5390B81 /* Frameworks */ = {
@@ -510,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BF6D1827C133DD004545FB /* HamburgerVM.swift in Sources */,
 				1930D6E427A5701E00D9C17B /* onlinechat.xcdatamodeld in Sources */,
 				1930D6DE27A5701E00D9C17B /* ViewController.swift in Sources */,
 				195094DB27B53E9600A97475 /* SignUpViewModel.swift in Sources */,
