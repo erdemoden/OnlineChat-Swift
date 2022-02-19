@@ -6,6 +6,6 @@
         <attribute name="session" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Session" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="Session" positionX="-63" positionY="-18" width="128" height="88"/>
     </elements>
 </model>

@@ -15,7 +15,14 @@ class HamburgerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.SetHamburgerRadious();
-        
+        let arr = ViewModel.SetNameImage();
+        if(arr["image"]  == nil){
+            ProfilePic.image = UIImage(named: "profile-pic");
+        }
+        else{
+            ProfilePic.image = UIImage(data: arr["image"] as! Data);
+        }
+        UserName.text = arr["username"] as! String;
     }
     
     func SetHamburgerRadious(){

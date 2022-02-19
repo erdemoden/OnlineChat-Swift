@@ -166,7 +166,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81y-nH-b9F">
                                 <rect key="frame" x="-10" y="-80" width="290" height="218"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mirket" translatesAutoresizingMaskIntoConstraints="NO" id="JeM-nB-QVW">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="JeM-nB-QVW">
                                         <rect key="frame" x="105" y="80" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="Kc9-C4-13Q"/>
@@ -265,7 +265,7 @@
     </scenes>
     <resources>
         <image name="hamburgerIcon" width="33.333332061767578" height="33.333332061767578"/>
-        <image name="mirket" width="647" height="900"/>
+        <image name="profile-pic" width="1280" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
