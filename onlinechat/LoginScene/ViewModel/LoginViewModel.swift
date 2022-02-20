@@ -66,6 +66,11 @@ class LoginViewModel{
                         if(self.Session[0].sessionid != "null"){
                         entity.setValue(self.Session[0].sessionid, forKey: "session");
                         entity.setValue(self.Session[0].name, forKey: "name");
+                            let myurl = Foundation.URL(string:"http://localhost:1998/image/\(self.Session[0].name)")!;
+                            let imagedata = try Foundation.Data(contentsOf:myurl);
+                            let myimage = UIImage(data: imagedata);
+                            let senddata = myimage?.jpegData(compressionQuality: 0.5);
+                            entity.setValue(senddata, forKey: "image");
                             try self.Context.save();
                             self.Delegate.SessionCreated();
                         }

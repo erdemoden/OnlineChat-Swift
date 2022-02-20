@@ -13,7 +13,7 @@ class LoginController: UIViewController {
     var ViewModel = LoginViewModel();
     @IBOutlet weak var TitleBackGround: UIView!
     override func viewWillAppear(_ animated: Bool) {
-       ViewModel.CheckSession();
+    ViewModel.CheckSession();
     }
     override func viewDidLoad() {
         super.viewDidLoad()

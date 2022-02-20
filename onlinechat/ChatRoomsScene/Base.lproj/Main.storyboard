@@ -166,7 +166,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81y-nH-b9F">
                                 <rect key="frame" x="-10" y="-80" width="290" height="218"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="JeM-nB-QVW">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mirket" translatesAutoresizingMaskIntoConstraints="NO" id="JeM-nB-QVW">
                                         <rect key="frame" x="105" y="80" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="Kc9-C4-13Q"/>
@@ -215,10 +215,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdI-Mq-3Ss">
-                                <rect key="frame" x="82" y="767" width="116" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="0ME-Wz-QiS"/>
-                                </constraints>
+                                <rect key="frame" x="79" y="527.5" width="112.5" height="40.5"/>
                                 <color key="tintColor" systemColor="systemGrayColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log-Out">
@@ -240,15 +237,15 @@
                             <constraint firstItem="4lX-JV-whp" firstAttribute="top" secondItem="lhD-d4-GaD" secondAttribute="bottom" constant="30" id="CIB-3v-cYX"/>
                             <constraint firstItem="81y-nH-b9F" firstAttribute="leading" secondItem="GXK-1T-qaU" secondAttribute="leading" constant="-10" id="CYu-wj-0x5"/>
                             <constraint firstItem="Fxp-zm-6vW" firstAttribute="trailing" secondItem="lhD-d4-GaD" secondAttribute="trailing" constant="3" id="Oaj-41-djE"/>
+                            <constraint firstItem="Fxp-zm-6vW" firstAttribute="trailing" secondItem="vdI-Mq-3Ss" secondAttribute="trailing" constant="88.5" id="RvX-Qj-jOn"/>
                             <constraint firstItem="Fxp-zm-6vW" firstAttribute="trailing" secondItem="4lX-JV-whp" secondAttribute="trailing" constant="6" id="SY4-IM-hFd"/>
-                            <constraint firstItem="vdI-Mq-3Ss" firstAttribute="leading" secondItem="Fxp-zm-6vW" secondAttribute="leading" constant="82" id="jqH-dU-dUA"/>
+                            <constraint firstItem="vdI-Mq-3Ss" firstAttribute="leading" secondItem="Fxp-zm-6vW" secondAttribute="leading" constant="79" id="bRU-K3-iVk"/>
                             <constraint firstItem="4lX-JV-whp" firstAttribute="leading" secondItem="Fxp-zm-6vW" secondAttribute="leading" id="jry-OT-XcO"/>
                             <constraint firstItem="pF6-85-dMJ" firstAttribute="leading" secondItem="Fxp-zm-6vW" secondAttribute="leading" constant="3" id="kZO-R2-Yxg"/>
                             <constraint firstItem="RZr-lj-3li" firstAttribute="top" secondItem="pF6-85-dMJ" secondAttribute="bottom" constant="30" id="lwL-qg-iCE"/>
                             <constraint firstAttribute="trailing" secondItem="81y-nH-b9F" secondAttribute="trailing" id="mYs-2m-yKa"/>
+                            <constraint firstItem="Fxp-zm-6vW" firstAttribute="bottom" secondItem="vdI-Mq-3Ss" secondAttribute="bottom" constant="250" id="nEB-1B-WfG"/>
                             <constraint firstItem="Fxp-zm-6vW" firstAttribute="trailing" secondItem="RZr-lj-3li" secondAttribute="trailing" constant="3" id="qnZ-ly-0jG"/>
-                            <constraint firstItem="vdI-Mq-3Ss" firstAttribute="bottom" secondItem="Fxp-zm-6vW" secondAttribute="bottom" id="v1d-G1-0c2"/>
-                            <constraint firstItem="Fxp-zm-6vW" firstAttribute="trailing" secondItem="vdI-Mq-3Ss" secondAttribute="trailing" constant="82" id="wEg-zK-hNr"/>
                             <constraint firstItem="81y-nH-b9F" firstAttribute="top" secondItem="GXK-1T-qaU" secondAttribute="top" constant="-80" id="ynr-BL-3Oz"/>
                         </constraints>
                     </view>
@@ -265,7 +262,7 @@
     </scenes>
     <resources>
         <image name="hamburgerIcon" width="33.333332061767578" height="33.333332061767578"/>
-        <image name="profile-pic" width="1280" height="1280"/>
+        <image name="mirket" width="647" height="900"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,22 +7,20 @@
 
 import UIKit
 
-class HamburgerViewController: UIViewController {
+class HamburgerViewController: UIViewController{
     @IBOutlet weak var UserName: UILabel!
     @IBOutlet weak var BackGroundView: UIView!
     @IBOutlet weak var ProfilePic: UIImageView!
     var ViewModel = HamburgerVM();
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
         self.SetHamburgerRadious();
         let arr = ViewModel.SetNameImage();
-        if(arr["image"]  == nil){
-            ProfilePic.image = UIImage(named: "profile-pic");
-        }
-        else{
             ProfilePic.image = UIImage(data: arr["image"] as! Data);
-        }
         UserName.text = arr["username"] as! String;
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ViewModel.Delegate = self;
     }
     
     func SetHamburgerRadious(){
@@ -33,8 +31,15 @@ class HamburgerViewController: UIViewController {
         self.ProfilePic.clipsToBounds = true;
     }
     @IBAction func LogOutBut(_ sender: Any) {
-        
+        ViewModel.LogOut();
     }
     
-
+    
+}
+extension HamburgerViewController : GoingBackToLogin{
+    func LogOut() {
+        let storyboard = UIStoryboard(name: "LoginStoryBoard", bundle: nil)
+        let Login = storyboard.instantiateViewController(withIdentifier: "Login") as! LoginController
+        self.navigationController?.pushViewController(Login, animated: true);
+    }
 }
