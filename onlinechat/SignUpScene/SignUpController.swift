@@ -21,7 +21,7 @@ class SignUpController: UIViewController {
     }
     @IBAction func ToLogIn(_ sender: Any) {
         let storyboard = UIStoryboard(name: "LoginStoryBoard", bundle: nil)
-        let LogIn = storyboard.instantiateViewController(withIdentifier: "LogIn") as! LoginController
+        let LogIn = storyboard.instantiateViewController(withIdentifier: "Login") as! LoginController
         navigationController?.pushViewController(LogIn, animated: true);
     }
     @IBAction func SignUp(_ sender: Any) {

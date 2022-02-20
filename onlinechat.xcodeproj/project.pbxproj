@@ -23,6 +23,9 @@
 		193DCC6E27B010B400DC8E07 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193DCC6D27B010B400DC8E07 /* LoginController.swift */; };
 		193DCC7127B02CD300DC8E07 /* SignUpStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 193DCC7027B02CD300DC8E07 /* SignUpStoryBoard.storyboard */; };
 		193DCC7327B02CF000DC8E07 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193DCC7227B02CF000DC8E07 /* SignUpController.swift */; };
+		193FC0BD27C2E16B00D695B8 /* PickImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 193FC0BC27C2E16B00D695B8 /* PickImage.storyboard */; };
+		193FC0C027C2E1B900D695B8 /* PickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193FC0BF27C2E1B900D695B8 /* PickController.swift */; };
+		193FC0C327C2E1F600D695B8 /* PickViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193FC0C227C2E1F600D695B8 /* PickViewModel.swift */; };
 		195094DB27B53E9600A97475 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195094DA27B53E9600A97475 /* SignUpViewModel.swift */; };
 		195094DE27B556EB00A97475 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195094DD27B556EB00A97475 /* SessionModel.swift */; };
 		19BF6D1827C133DD004545FB /* HamburgerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BF6D1727C133DD004545FB /* HamburgerVM.swift */; };
@@ -70,6 +73,9 @@
 		193DCC6D27B010B400DC8E07 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		193DCC7027B02CD300DC8E07 /* SignUpStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryBoard.storyboard; sourceTree = "<group>"; };
 		193DCC7227B02CF000DC8E07 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		193FC0BC27C2E16B00D695B8 /* PickImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickImage.storyboard; sourceTree = "<group>"; };
+		193FC0BF27C2E1B900D695B8 /* PickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickController.swift; sourceTree = "<group>"; };
+		193FC0C227C2E1F600D695B8 /* PickViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewModel.swift; sourceTree = "<group>"; };
 		195094DA27B53E9600A97475 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		195094DD27B556EB00A97475 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 		19BF6D1727C133DD004545FB /* HamburgerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerVM.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 		1930D6D827A5701E00D9C17B /* onlinechat */ = {
 			isa = PBXGroup;
 			children = (
+				193FC0BB27C2E13D00D695B8 /* ImagePickScene */,
 				195094DC27B5400000A97475 /* Models */,
 				193DCC7427B04A7D00DC8E07 /* ChatRoomsScene */,
 				193DCC6F27B02CAB00DC8E07 /* SignUpScene */,
@@ -223,6 +230,32 @@
 				1930D6DD27A5701E00D9C17B /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		193FC0BB27C2E13D00D695B8 /* ImagePickScene */ = {
+			isa = PBXGroup;
+			children = (
+				193FC0C127C2E1DC00D695B8 /* ViewModel */,
+				193FC0BE27C2E17F00D695B8 /* Controller */,
+				193FC0BC27C2E16B00D695B8 /* PickImage.storyboard */,
+			);
+			path = ImagePickScene;
+			sourceTree = "<group>";
+		};
+		193FC0BE27C2E17F00D695B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				193FC0BF27C2E1B900D695B8 /* PickController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		193FC0C127C2E1DC00D695B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				193FC0C227C2E1F600D695B8 /* PickViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		195094D827B53E6000A97475 /* ViewModel */ = {
@@ -394,6 +427,7 @@
 				1930D6E627A5702000D9C17B /* Assets.xcassets in Resources */,
 				1930D6E127A5701E00D9C17B /* Main.storyboard in Resources */,
 				193DCC6B27B00DE600DC8E07 /* LoginStoryBoard.storyboard in Resources */,
+				193FC0BD27C2E16B00D695B8 /* PickImage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,9 +558,11 @@
 				19BF6D1827C133DD004545FB /* HamburgerVM.swift in Sources */,
 				1930D6E427A5701E00D9C17B /* onlinechat.xcdatamodeld in Sources */,
 				1930D6DE27A5701E00D9C17B /* ViewController.swift in Sources */,
+				193FC0C327C2E1F600D695B8 /* PickViewModel.swift in Sources */,
 				195094DB27B53E9600A97475 /* SignUpViewModel.swift in Sources */,
 				1930D6DA27A5701E00D9C17B /* AppDelegate.swift in Sources */,
 				193DCC7327B02CF000DC8E07 /* SignUpController.swift in Sources */,
+				193FC0C027C2E1B900D695B8 /* PickController.swift in Sources */,
 				1930D70D27A57EB200D9C17B /* HamburgerViewController.swift in Sources */,
 				195094DE27B556EB00A97475 /* SessionModel.swift in Sources */,
 				1930D71027A5D71800D9C17B /* ChatTables.swift in Sources */,
