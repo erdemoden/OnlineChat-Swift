@@ -33,6 +33,11 @@ class HamburgerViewController: UIViewController{
     @IBAction func LogOutBut(_ sender: Any) {
         ViewModel.LogOut();
     }
+    @IBAction func Changepicture(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "PickImage", bundle: nil)
+        let Pick = storyboard.instantiateViewController(withIdentifier: "Pick") as! PickController
+        self.navigationController?.pushViewController(Pick, animated: true);
+    }
     
     
 }

@@ -12,7 +12,7 @@
         <!--Pick Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="PickController" customModule="onlinechat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Pick" id="Y6W-OH-hqX" customClass="PickController" customModule="onlinechat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.579710144927539" y="46.875"/>
+            <point key="canvasLocation" x="87" y="42"/>
         </scene>
     </scenes>
     <resources>
