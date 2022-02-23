@@ -4,7 +4,7 @@
 target 'onlinechat' do
   use_frameworks!
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
-
+  pod 'Alamofire', '~> 5.5'
   # Pods for onlinechat
 
   target 'onlinechatTests' do

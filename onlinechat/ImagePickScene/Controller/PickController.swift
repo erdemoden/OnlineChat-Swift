@@ -38,7 +38,7 @@ class PickController: UIViewController, UIImagePickerControllerDelegate & UINavi
     }
     @IBAction func Cancel(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
-             self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
