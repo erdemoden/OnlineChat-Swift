@@ -8,30 +8,30 @@ Bu uygulamada mvvm design pattern kullandım (en azından anladığım kadar) ay
 
 # -1-
 
-![](uygulama1.PNG)
+![](uygulama1.png)
 
 
 # -2- 
 
-![](uygulama2.PNG)
+![](uygulama2.png)
 
 
 # -3-
 
-![](uygulama3.PNG)
+![](uygulama3.png)
 
 # -4- 
 
-![](uygulama4.PNG)
+![](uygulama4.png)
 
 # -5- 
 
-![](uygulama5.PNG)
+![](uygulama5.png)
 
 # -6- 
 
-![](uygulama6.PNG)
+![](uygulama6.png)
 
 # -7-
 
-![](uygulama7.PNG)
+![](uygulama7.png)
