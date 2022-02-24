@@ -55,12 +55,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     // MARK: Setting HamburgerView By User Datas
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ToHamburger"{
-            let Hamburger = segue.destination as! HamburgerViewController;
-            
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "ToHamburger"{
+//            let Hamburger = segue.destination as! HamburgerViewController;
+//        }
+//    }
     
     // MARK: When BackHamburger (Black Screen) Tapped Hamburger Will Disappear.
     @objc func BackHamburgerTapped(){

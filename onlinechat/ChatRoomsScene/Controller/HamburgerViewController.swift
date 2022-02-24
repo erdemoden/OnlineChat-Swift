@@ -14,9 +14,9 @@ class HamburgerViewController: UIViewController{
     var ViewModel = HamburgerVM();
     override func viewWillAppear(_ animated: Bool) {
         self.SetHamburgerRadious();
-        let arr = ViewModel.SetNameImage();
-            ProfilePic.image = UIImage(data: arr["image"] as! Data);
-        UserName.text = arr["username"] as! String;
+            let arr = self.ViewModel.SetNameImage();
+            self.ProfilePic.image = UIImage(data: arr["image"] as! Data);
+            self.UserName.text = arr["username"] as? String;
     }
     override func viewDidLoad() {
         super.viewDidLoad()

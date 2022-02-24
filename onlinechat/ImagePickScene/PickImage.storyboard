@@ -47,7 +47,7 @@
                                     <action selector="Cancel:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qnm-qy-1Bt"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sLN-iE-cJ2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-pic" translatesAutoresizingMaskIntoConstraints="NO" id="sLN-iE-cJ2">
                                 <rect key="frame" x="67.5" y="108" width="240" height="204"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="204" id="6Lq-hf-aaj"/>
@@ -81,6 +81,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="profile-pic" width="1280" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -21,22 +21,23 @@ class HamburgerVM{
     }
     // MARK: Setting User Name And Image
     func SetNameImage() -> [String:Any?]{
-        var name:Any? = nil;
+        var name:String? = nil;
         var image:Any? = nil;
         let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Session");
         fetch.returnsObjectsAsFaults = false;
         do{
         let results = try self.Context.fetch(fetch);
         for result in results as! [NSManagedObject]{
-             name = result.value(forKey: "name");
-             image = result.value(forKey: "image");
+            name = result.value(forKey: "name") as? String;
+             image = result.value(forKey: "image") as! Data;
             }
         }
         catch{
             print("error");
         }
-            return ["image":image as! Data,"username":name as! String];
-    }
+        return ["image":image as! Data,"username":name];
+    
+}
     
     func LogOut(){
         let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Session");
